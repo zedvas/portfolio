@@ -1,0 +1,65 @@
+
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 62.5%;
+  background-color: var(--yellow);
+  color: var(--forestgreen);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appContainer {
+  /* background-color: aquamarine; */
+  width: 60vw; 
+  min-height: 100vh;
+  margin: auto;
+  max-width: 1080px;
+  padding: 30px;
+
+}
+
+.home {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* .appContainer {
+  margin: auto;
+  width: 100%;
+} */
+
+/* .pageContainer {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.nav {
+    height: var(--navHeight);
+    background-color: red;
+}
+
+
+
+
+/*=====================================================================================*/
+
+
+.card {
+  /* border: 1px solid green; */
+  
+  /* position: relative; */
+}
+
+
