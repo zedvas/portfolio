@@ -1,4 +1,4 @@
-export const Card = ({ fullStack, imageSrc, title, description, tools }) => {
+export const Card = ({ fullStack, imageSrc, title, description, tools, githubLink, githubLinkBackend, demoLink }) => {
   return (
     <div className="card">
       <div className="imageContainer">
@@ -16,13 +16,13 @@ export const Card = ({ fullStack, imageSrc, title, description, tools }) => {
       <div className="buttonContainer">
         {fullStack ? (
           <div>
-            <button>Github<span>Front end</span></button>
-            <button>Github<span>Back end</span></button>
+            <button><a href={githubLink} target="_blank">Github<span>Front end</span></a></button>
+            <button><a href={githubLinkBackend} target="_blank">Github<span>Back end</span></a></button>
           </div>
         ) : (
-          <button>Github</button>
+          <button><a href={githubLink} target="_blank">Github</a></button>
         )}
-        <button>Live demo</button>
+        <button><a href={demoLink} target="_blank">Live demo</a></button>
       </div>
     </div></div>
   );
