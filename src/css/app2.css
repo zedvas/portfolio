@@ -1,7 +1,7 @@
 :root {
-  --light: rgb(237, 182, 0);
-  --dark: rgba(9, 55, 9, 0.842);
-  --accent: rgb(242, 84, 45);
+  --yellow: #f2ae1c;
+  --green: #4c7031;
+  --accent: #f2542d;
   --navHeight: 15vh;
 }
 
@@ -20,8 +20,8 @@ body {
   font-family: "Karla", sans-serif;
   font-size: 62.5%;
   font-weight: 100;
-  background-color: var(--dark);
-  color: var(--dark);
+  background-color: var(--green);
+  color: var(--green);
   width: 100vw;
 }
 
@@ -89,8 +89,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--light);
-  margin: 0.3em 0
+  color: var(--yellow);
+  margin: 0.3em 0;
 }
 
 .titleContainer h1 {
@@ -103,7 +103,7 @@ h1 {
   letter-spacing: -0.25rem;
   color: var(--accent);
   margin-right: 0.3em;
-  margin-top: -0.9em
+  margin-top: -0.9em;
 }
 
 .about {
@@ -144,7 +144,7 @@ form {
 }
 
 input {
-  background-color: var(--dark);
+  background-color: var(--green);
   color: #ffffff;
 }
 
@@ -191,8 +191,8 @@ button[type="submit"] {
   height: 100%;
 }
 .card {
-  background-color: var(--dark);
-  color:white;
+  background-color: var(--green);
+  color: white;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -224,13 +224,13 @@ button[type="submit"] {
 }
 
 .buttonContainer {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .buttonContainer div {
-    width: 60%;
-display: flex;
-justify-content: space-between;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
 }
 .infoContainer {
   flex-direction: column;
@@ -251,10 +251,10 @@ justify-content: space-between;
   overflow: hidden;
 }
 .imageContainer img {
-  width:100%;
+  width: 100%;
 }
 .infoContainer {
-  background-color: var(--dark);
+  background-color: var(--green);
 }
 .card h2 {
   font-family: "Oswald", sans-serif;
@@ -273,8 +273,8 @@ justify-content: space-between;
   padding: 0.8em 1em;
   border-radius: 20px;
   text-align: center;
-  width: 90px; 
-   height: 50px;
+  width: 90px;
+  height: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,7 +283,6 @@ justify-content: space-between;
   color: var(--accent);
   background-color: transparent;
   border: 3px solid var(--accent);
-  
 }
 
 .card button span {

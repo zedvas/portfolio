@@ -46,7 +46,6 @@ export const Projects = () => {
         githubLink="https://github.com/zedvas/weatherApp"
         demoLink="https://weather-zv.netlify.app/"
       />
-
       <Card
         imageSrc={"/assets/julyliebe-mobile.png"}
         title={"JulyLiebe Homage"}
