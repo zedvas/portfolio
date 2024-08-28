@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import joi from "joi";
 
-export const Contact = ({openReactModal}) => {
+export const Contact = ({ openReactModal, changeModalMessage }) => {
   const form = useRef();
   const [formValues, setFormValues] = useState({
     from_name: "",
@@ -27,25 +27,57 @@ export const Contact = ({openReactModal}) => {
     e.preventDefault();
     const validateForm = formSchema.validate(formValues);
     if (validateForm.error) {
-      openReactModal()
-      console.log("please check fields have been entered correctly")
+      changeModalMessage(
+        <>
+          <h1>oops</h1>
+          <p>Please check all fields have been entered correctly</p>
+        </>
+      );
+      openReactModal();
     } else {
-      console.log("ready to send email!")
+      emailjs
+        .sendForm("service_3koqiqv", "template_yu7aizl", form.current, {
+          publicKey: "F9Gq5eaoCz-oG-ORF",
+        })
+        .then(
+          () => {
+            changeModalMessage(
+              <>
+                <h1>well hey there!</h1>
+                <p>
+                  Thanks for your message.
+                  <br />
+                  It's on its way to my inbox and I'll get back to you very
+                  soon.
+                </p>
+              </>
+            );
+            openReactModal();
+            setFormValues({
+              from_name: "",
+              from_email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            changeModalMessage(
+              <>
+                <h1>Oops,</h1>
+                <p>there was an unexpected error!</p>
+                <br />
+                <p>
+                  Why not pop me a message over on
+                  <a href="https://www.linkedin.com/in/zahravasanji/">
+                    <u>LinkedIn</u>
+                  </a>
+                  ?
+                </p>
+              </>
+            );
+            openReactModal();
+          }
+        );
     }
-
-
-    // emailjs
-    //   .sendForm("service_3koqiqv", "template_yu7aizl", form.current, {
-    //     publicKey: "F9Gq5eaoCz-oG-ORF",
-    //   })
-    //   .then(
-    //     () => {
-    //       console.log("SUCCESS!");
-    //     },
-    //     (error) => {
-    //       console.log("FAILED...", error.text);
-    //     }
-    //   );
   };
 
   return (

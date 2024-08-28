@@ -3,9 +3,7 @@ import zIndex from "@mui/material/styles/zIndex";
 import { useState } from "react";
 import ReactModal from "react-modal";
 
-export const Modal = ({reactModalIsOpen, closeReactModal}) => {
-
-
+export const Modal = ({ reactModalIsOpen, closeReactModal, modalText }) => {
   ReactModal.setAppElement("#root");
 
   const modalStyle = {
@@ -15,7 +13,7 @@ export const Modal = ({reactModalIsOpen, closeReactModal}) => {
       position: "fixed",
       zIndex: 9,
       top: 0,
-      left: 0
+      left: 0,
     },
     content: {
       inset: 0,
@@ -23,11 +21,15 @@ export const Modal = ({reactModalIsOpen, closeReactModal}) => {
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      backgroundColor: "var(--green)",
+      backgroundColor: "var(--accent)",
       borderRadius: "20px",
-      height: "300px",
-      width: "300px",
+      maxHeight: "500px",
+      width: "320px",
       margin: "auto",
+      textAlign: "center",
+      fontWeight: 500,
+      fontSize: "1.1rem",
+      overflow: "hidden"
     },
   };
   return (
@@ -37,8 +39,20 @@ export const Modal = ({reactModalIsOpen, closeReactModal}) => {
         onRequestClose={closeReactModal}
         style={modalStyle}
       >
-        <Close sx={{ border: "1px solid red" }} />
-        <button onClick={closeReactModal}>✖️ Close Modal</button>
+        <button
+          style={{
+            backgroundColor: "transparent",
+            border: "none",
+            cursor: "pointer",
+            position: "absolute",
+            top: "20px",
+            right: "20px",
+          }}
+        >
+          <Close onClick={closeReactModal} />
+        </button>
+        {/* <p style={{maxWidth: "250px"}}>{modalText}</p> */}
+        <>{modalText}</>
       </ReactModal>
     </>
   );

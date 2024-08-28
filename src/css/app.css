@@ -93,8 +93,8 @@ a {
 a:hover {
   font-family: var(--solid-font);
   font-weight: 700;
-
 }
+
 .home {
   display: flex;
   flex-direction: column;
@@ -159,7 +159,7 @@ h1 {
   color: var(--white);
 }
 
-.contact h1 {
+.contact h1 span:nth-child(2) {
   position: relative;
 }
 
@@ -212,7 +212,9 @@ h1 {
 }
 
 /*==================    CONTACT   ==================*/
-
+.contact {
+  width: 100%;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -221,7 +223,7 @@ form {
 }
 
 input {
-  background-color: var(--green);
+  background-color: var(--green) !important;
   color: #ffffff;
 }
 

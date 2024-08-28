@@ -8,7 +8,8 @@ import { Modal } from "./Modal";
 import { useState } from "react";
 
 function App() {
-  const [reactModalIsOpen, setReactModalIsOpen] = useState(true);
+  const [reactModalIsOpen, setReactModalIsOpen] = useState(false);
+  const [modalText, setModalText] = useState("")
 
   const openReactModal = () => {
     setReactModalIsOpen(true);
@@ -17,17 +18,23 @@ function App() {
   const closeReactModal = () => {
     setReactModalIsOpen(false);
   };
+
+  const changeModalMessage = (message) => {
+    setModalText(message)
+  }
+
   return (
     <div className={reactModalIsOpen? "appContainer disableScroll": "appContainer"}>
       <Modal
         reactModalIsOpen={reactModalIsOpen}
         closeReactModal={closeReactModal}
+        modalText={modalText}
       />
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact openReactModal={openReactModal}/>} />
+        <Route path="/contact" element={<Contact openReactModal={openReactModal} changeModalMessage={changeModalMessage}/>} />
       </Routes>
     </div>
   );
