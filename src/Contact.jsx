@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import joi from "joi";
 
-export const Contact = () => {
+export const Contact = ({openReactModal}) => {
   const form = useRef();
   const [formValues, setFormValues] = useState({
     from_name: "",
@@ -27,6 +27,7 @@ export const Contact = () => {
     e.preventDefault();
     const validateForm = formSchema.validate(formValues);
     if (validateForm.error) {
+      openReactModal()
       console.log("please check fields have been entered correctly")
     } else {
       console.log("ready to send email!")
