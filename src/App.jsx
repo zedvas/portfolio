@@ -3,7 +3,7 @@ import { Contact } from "./Contact";
 import { Home } from "./Home";
 import { Projects } from "./Projects";
 import { Nav } from "./Nav";
-import "./css/app2.css";
+import "./css/app.css";
 
 function App() {
   return (<div className="appContainer">
