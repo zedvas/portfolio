@@ -2,9 +2,9 @@ export const Title = () => {
   return (
     <div className="titleContainer">
       <h1>
-        <span>ZAHRA</span> <span>VASANJI</span>
+        <span>zahra</span> <span>vasanji</span>
       </h1>
-      <p>software engineer</p>
+      <p>software developer</p>
     </div>
   );
 };

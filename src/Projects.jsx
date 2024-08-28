@@ -3,7 +3,7 @@ import { Card } from "./Card";
 export const Projects = () => {
   return (
     <div className="projects">
-      <h1>Projects</h1>
+      <h1>projects</h1>
       <Card
         fullStack={true}
         imageSrc={"/assets/holidough.png"}
