@@ -3,10 +3,12 @@
   --green: #4c7031;
   --accent: #f2542d;
   --white: #fff;
+  --brown: #dfab56;
+  --grey: #575b56;
   --navHeight: 15vh;
-  --solid-font:"Cocogoose-Pro-Regular";
-  --hollow-font:"Cocogoose-Pro-Block-Border";
-  --inline-font:"Cocogoose-Pro-Inline";
+  --solid-font: "Cocogoose-Pro-Regular";
+  --hollow-font: "Cocogoose-Pro-Block-Border";
+  --inline-font: "Cocogoose-Pro-Inline";
 }
 
 /* @font-face {
@@ -57,15 +59,15 @@ body {
 
 .disableScroll {
   height: 100vh;
-  overflow:hidden;
+  overflow: hidden;
 }
 .nav {
   /* box-shadow: 1px 4px 30px rgba(215, 213, 213, 0.434); */
   background-color: var(--yellow);
   position: sticky;
-  z-index:2;
+  z-index: 2;
   top: 0;
-  padding: 2em;
+  padding: 2em 2em 0 2em;
   width: 100vw;
   max-width: 1080px;
   display: flex;
@@ -98,6 +100,7 @@ a:hover {
 .home {
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 .home,
@@ -128,7 +131,8 @@ h1 {
   position: relative;
 }
 
-.titleContainer h1 span:nth-child(2), .contact h1 span:nth-child(2) {
+.titleContainer h1 span:nth-child(2),
+.contact h1 span:nth-child(2) {
   color: var(--green);
 }
 
@@ -141,20 +145,22 @@ h1 {
   content: "projects";
 }
 
-.titleContainer h1 span:nth-child(2)::after{
+.titleContainer h1 span:nth-child(2)::after {
   content: "vasanji";
 }
 
-.contact h1 span:nth-child(2)::after{
+.contact h1 span:nth-child(2)::after {
   content: "hello!";
 }
 
-.titleContainer h1 span:nth-child(2)::after, .projects h1::after, .contact h1 span:nth-child(2)::after {
+.titleContainer h1 span:nth-child(2)::after,
+.projects h1::after,
+.contact h1 span:nth-child(2)::after {
   position: absolute;
-  right:6px;
-  bottom:0;
+  right: 6px;
+  bottom: 0;
   letter-spacing: 5px;
-  font-weight: 100;;
+  font-weight: 100;
   font-family: var(--hollow-font), sans-serif;
   color: var(--white);
 }
@@ -187,30 +193,44 @@ h1 {
 }
 
 .about span {
-  color:var(--green);
+  color: var(--green);
   font-family: var(--solid-font);
-  margin-top: -90px
+  margin-top: -90px;
 }
 
 /*==================    ICONS   ==================*/
 
 .icons img {
   height: 60px;
-  margin: 1em;
+  margin: 0.2em;
   border: 1px dashed var(--white);
   padding: 1em;
   border-radius: 20px;
 }
 
 .icons {
+  position: absolute;
+  top: -80px; right: 0;
+  /* width: 60px; position: absolute; top: 0; right: 0; */
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 2rem;
+  flex-direction: column-reverse;
   justify-content: center;
-  align-items: center;
-  /* display: none; */
+  align-items: flex-end;
+  /* display:none */
 }
 
+
+.home div:nth-child(1) {
+  position: relative;
+}
+
+.icons div {
+  display: flex;
+}
+
+.titleContainer {
+  margin-top: -50px;
+}
 /*==================    CONTACT   ==================*/
 .contact {
   width: 100%;
