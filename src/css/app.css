@@ -120,7 +120,7 @@ a:hover {
 h1 {
   font-family: var(--solid-font), sans-serif;
   font-weight: 100;
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 80px;
   display: flex;
   flex-direction: column;
@@ -300,6 +300,7 @@ button[type="submit"] {
   margin: 1em;
   height: 600px;
   padding: 1em;
+  position: relative;
 }
 
 .card .imageContainer,
@@ -351,7 +352,6 @@ font-weight: 700
 }
 
 .imageContainer {
-  position: relative;
   border: 1px solid white;
   overflow: hidden;
 }
@@ -365,9 +365,6 @@ font-weight: 700
   font-family: var(--solid-font), sans-serif;
   font-size: 3rem;
   line-height: 33px;
-  position: absolute;
-  bottom: 10px;
-  right: -0.3em;
   text-align: right;
   width: 200px;
   color: var(--accent);
