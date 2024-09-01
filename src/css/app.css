@@ -295,11 +295,8 @@ button[type="submit"] {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 1em;
   height: 600px;
-  padding: 1em;
   position: relative;
 }
 
@@ -319,12 +316,20 @@ button[type="submit"] {
 .buttonContainer,
 .techContainer {
   display: flex;
-  justify-content: space-evenly;
+}
+
+.infoContainer {
+  justify-content: center;
+  padding: 1em;
+  /* justify-content: space-evenly;
   align-items: center;
+  flex-direction: row; */
 }
 
 .buttonContainer {
   flex-direction: column;
+  max-width: 280px;
+  align-self: center;
 }
 
 .buttonContainer div {
@@ -335,20 +340,22 @@ button[type="submit"] {
 
 .infoContainer {
   flex-direction: column;
-  text-align: center;
 }
-.infoContainer p{
- font-size:1rem;
+.infoContainer p {
+  font-size: 1rem;
 }
 .techContainer {
   flex-wrap: wrap;
-  width: 80%;
 }
 
-.techContainer span{
-margin: 0 0.4em;
-font-size: 0.8rem;
-font-weight: 700
+.techContainer span {
+  margin-right: 0.6em;
+  margin-bottom: 0.4em;
+  background-color:var(--accent);
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 .imageContainer {
@@ -363,10 +370,8 @@ font-weight: 700
 }
 .card h2 {
   font-family: var(--solid-font), sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 33px;
-  text-align: right;
-  width: 200px;
   color: var(--accent);
 }
 
