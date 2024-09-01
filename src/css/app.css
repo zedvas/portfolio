@@ -327,10 +327,14 @@ button[type="submit"] {
 }
 
 .buttonContainer {
-  flex-direction: column;
+  flex-direction: row;
   max-width: 280px;
   align-self: center;
 }
+.fullstack .buttonContainer {
+  flex-direction: column;
+}
+
 
 .buttonContainer div {
   display: flex;

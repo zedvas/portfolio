@@ -9,7 +9,7 @@ export const Card = ({
   demoLink,
 }) => {
   return (
-    <div className="card">
+    <div className={fullStack ? "card fullstack" : "card"}>
       <div className="imageContainer">
         <img src={imageSrc} />
       </div>
