@@ -87,7 +87,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: var(--green);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: var(--inline-font);
   text-shadow: 10px #4c7031;
 }
@@ -210,7 +210,8 @@ h1 {
 
 .icons {
   position: absolute;
-  top: -80px; right: 0;
+  top: -80px;
+  right: 0;
   /* width: 60px; position: absolute; top: 0; right: 0; */
   display: flex;
   flex-direction: column-reverse;
@@ -218,7 +219,6 @@ h1 {
   align-items: flex-end;
   /* display:none */
 }
-
 
 .home div:nth-child(1) {
   position: relative;
@@ -327,21 +327,27 @@ button[type="submit"] {
 }
 
 .buttonContainer div {
-  width: 60%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
 .infoContainer {
   flex-direction: column;
+  text-align: center;
 }
-
+.infoContainer p{
+ font-size:1rem;
+}
 .techContainer {
   flex-wrap: wrap;
+  width: 80%;
 }
 
-.techContainer,
-.buttonContainer {
-  width: 80%;
+.techContainer span{
+margin: 0 0.4em;
+font-size: 0.8rem;
+font-weight: 700
 }
 
 .imageContainer {
@@ -356,7 +362,7 @@ button[type="submit"] {
   background-color: var(--green);
 }
 .card h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--solid-font), sans-serif;
   font-size: 3rem;
   line-height: 33px;
   position: absolute;
@@ -369,23 +375,29 @@ button[type="submit"] {
 
 .card button {
   border: none;
-  padding: 0.8em 1em;
+  padding: 0.8em;
   border-radius: 20px;
   text-align: center;
-  width: 90px;
+  min-width: 90px;
   height: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0.1em;
-  color: var(--accent);
+  margin: 0.2em 0.5em;
   background-color: transparent;
   border: 3px solid var(--accent);
+  font-size: 1rem;
+  position: relative;
+}
+
+.card button a {
+  color: var(--accent);
 }
 
 .card button span {
-  font-weight: 700;
+  display: block;
+  font-size: 0.8rem;
 }
 
 .cta {

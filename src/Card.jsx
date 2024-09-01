@@ -15,9 +15,9 @@ export const Card = ({ fullStack, imageSrc, title, description, tools, githubLin
 
       <div className="buttonContainer">
         {fullStack ? (
-          <div>
-            <button><a href={githubLink} target="_blank">Github<span>Front end</span></a></button>
-            <button><a href={githubLinkBackend} target="_blank">Github<span>Back end</span></a></button>
+          <div >
+            <button><a href={githubLink} target="_blank"><span>Github</span>Front end</a></button>
+            <button><a href={githubLinkBackend} target="_blank"><span>Github</span>Back end</a></button>
           </div>
         ) : (
           <button><a href={githubLink} target="_blank">Github</a></button>
