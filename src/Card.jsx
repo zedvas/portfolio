@@ -10,11 +10,11 @@ export const Card = ({
 }) => {
   return (
     <div className={fullStack ? "card fullstack" : "card"}>
-      <div className="imageContainer">
+              <h2>{title}</h2>
+<div className="imageContainer">
         <img src={imageSrc} />
       </div>
       <div className="infoContainer">
-        <h2>{title}</h2>
         <p>{description}</p>
         <div className="techContainer">
           {tools.map((tool) => (
@@ -24,18 +24,18 @@ export const Card = ({
 
         <div className="buttonContainer">
           {fullStack ? (
-            <div>
+           <>
               <button>
                 <a href={githubLink} target="_blank">
-                  <span>Github</span>Front end
+                  Front end
                 </a>
               </button>
               <button>
                 <a href={githubLinkBackend} target="_blank">
-                  <span>Github</span>Back end
+                  Back end
                 </a>
               </button>
-            </div>
+           </>
           ) : (
             <button>
               <a href={githubLink} target="_blank">
