@@ -272,6 +272,8 @@ button[type="submit"] {
   letter-spacing: 3px;
   font-weight: 100;
   background-color: var(--accent);
+  border: 10px solid var(--accent);
+  transition: all 0.5s ease;
   color: #ffffff;
   padding: 0.7em 1em;
 }
@@ -324,6 +326,7 @@ button[type="submit"] {
 .buttonContainer {
   flex-direction: row;
   max-width: 280px;
+  align-self: flex-end;
 }
 
 .buttonContainer div {
@@ -342,12 +345,16 @@ button[type="submit"] {
 
 .techContainer {
   flex-wrap: wrap;
+  max-width: 400px;
+  align-self: flex-end;
+  justify-content: flex-end;
 }
 
 .techContainer span {
-  margin-right: 0.6em;
+  margin-left: 0.6em;
   margin-bottom: 0.4em;
-  background-color:var(--green);
+  background-color: var(--white);
+  color: var(--green);
   padding: 0.3em 0.5em;
   border-radius: 5px;
   font-size: 0.8rem;
@@ -356,7 +363,7 @@ button[type="submit"] {
 
 .imageContainer {
   max-width: 600px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   overflow: hidden;
 }
 
@@ -365,13 +372,35 @@ button[type="submit"] {
   height: 100%;
   object-fit: cover;
 }
-
-
+.card .textContainer {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    var(--green) 80%,
+    var(--green) 100%
+  );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 1em;
+  font-size: 0.9rem;
+}
+.imageContainer {
+  position: relative;
+}
 .card h2 {
   font-family: var(--solid-font), sans-serif;
   font-size: 2rem;
   line-height: 33px;
-  color: var(--accent);
+  color: var(--white);
 }
 
 .card button {
@@ -386,14 +415,16 @@ button[type="submit"] {
   justify-content: center;
   align-items: center;
   margin: 0.2em;
-  background-color: transparent;
+  background-color: var(--accent);
   border: 3px solid var(--accent);
+  transition: all 0.5s ease;
+  color: var(--white);
   font-size: 1rem;
   position: relative;
 }
 
 .card button a {
-  color: var(--accent);
+  color: var(--white);
 }
 
 .card button span {
@@ -403,4 +434,8 @@ button[type="submit"] {
 
 .cta {
   color: var(--accent);
+}
+button:hover {
+  background-color: var(--green);
+  border-color: var(--green);
 }

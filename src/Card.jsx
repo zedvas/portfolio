@@ -10,45 +10,46 @@ export const Card = ({
 }) => {
   return (
     <div className={fullStack ? "card fullstack" : "card"}>
-              <h2>{title}</h2>
-<div className="imageContainer">
+      <div className="imageContainer">
         <img src={imageSrc} />
+        <div className="textContainer">
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
       </div>
       <div className="infoContainer">
-        <p>{description}</p>
         <div className="techContainer">
           {tools.map((tool) => (
             <span key={tool}>{tool}</span>
           ))}
         </div>
-
-        <div className="buttonContainer">
-          {fullStack ? (
-           <>
-              <button>
-                <a href={githubLink} target="_blank">
-                  Front end
-                </a>
-              </button>
-              <button>
-                <a href={githubLinkBackend} target="_blank">
-                  Back end
-                </a>
-              </button>
-           </>
-          ) : (
+      </div>
+      <div className="buttonContainer">
+        {fullStack ? (
+          <>
             <button>
               <a href={githubLink} target="_blank">
-                Github
+                Front end
               </a>
             </button>
-          )}
+            <button>
+              <a href={githubLinkBackend} target="_blank">
+                Back end
+              </a>
+            </button>
+          </>
+        ) : (
           <button>
-            <a href={demoLink} target="_blank">
-              Live demo
+            <a href={githubLink} target="_blank">
+              Github
             </a>
           </button>
-        </div>
+        )}
+        <button>
+          <a href={demoLink} target="_blank">
+            Live demo
+          </a>
+        </button>
       </div>
     </div>
   );
