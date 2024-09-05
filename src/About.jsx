@@ -11,7 +11,7 @@ export const About = () => {
         expanding my knowledge. <br/> <br/>When I’m not busy crafting elegant code, you’ll
         find me hunched over a computer exploring the latest tech trends or
         tinkering with new tools. I’d love to connect with others who share the
-        same enthusiasm for innovation so do <a href="/contact">say hello</a>!
+        same enthusiasm for innovation so do <a href="/contact">say hello</a>
       </p>
     </div>
   );

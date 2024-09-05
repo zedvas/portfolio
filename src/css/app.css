@@ -46,6 +46,7 @@ body {
   background-color: var(--yellow);
   color: var(--white);
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .appContainer {
@@ -120,20 +121,25 @@ a:hover {
 h1 {
   font-family: var(--solid-font), sans-serif;
   font-weight: 100;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 80px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   color: var(--white);
   margin: 0.3em -10px 0.3em 0;
-  letter-spacing: 5px;
+  letter-spacing: 0px;
   position: relative;
 }
 
 .titleContainer h1 span:nth-child(2),
 .contact h1 span:nth-child(2) {
   color: var(--green);
+}
+
+.projects h1, .contact h1 {
+  font-size: 5rem;
+  flex-direction: column;
 }
 
 .projects h1 {
@@ -159,12 +165,14 @@ h1 {
   position: absolute;
   right: 6px;
   bottom: 0;
-  letter-spacing: 5px;
+  letter-spacing: 0px;
   font-weight: 100;
   font-family: var(--hollow-font), sans-serif;
   color: var(--white);
 }
-
+.titleContainer h1 span:nth-child(2)::after {
+  letter-spacing: 0px;
+}
 .contact h1 span:nth-child(2) {
   position: relative;
 }
@@ -184,11 +192,10 @@ h1 {
 }
 
 .about {
-  margin: 0 1em;
   max-width: 600px;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  line-height: 0.8em;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  line-height: 1em;
   color: white;
 }
 
@@ -196,6 +203,12 @@ h1 {
   color: var(--green);
   font-family: var(--solid-font);
   margin-top: -90px;
+}
+
+.about p a {
+  font-family: inherit;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 /*==================    ICONS   ==================*/
@@ -230,11 +243,12 @@ h1 {
 
 .titleContainer {
   margin-top: -50px;
+  margin-left: -50px;
 }
 
-.womanSvg {
-  transform: translateX(200px);
-}
+/* .womanSvg {
+  transform: translateX(-80px);
+} */
 /*==================    CONTACT   ==================*/
 .contact {
   width: 100%;
@@ -446,7 +460,18 @@ button:hover {
 }
 
 .heroContainer {
-  width: 345px;
-  overflow: hidden;
-  align-self: flex-end;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1.5em;
+  position: relative;
+  /* overflow: hidden;
+  align-self: flex-end; */
+  }
+
+  .icons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }

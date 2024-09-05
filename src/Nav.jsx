@@ -13,6 +13,9 @@ export const Nav = () => {
         <NavLink to="/projects">
           <li>projects</li>
         </NavLink>
+        <NavLink to="/assets/ZahraVasanji.pdf" download target="_blank">
+          <li>resume</li>
+        </NavLink>
         <NavLink to="/contact">
           <li className="cta">let's chat</li>
         </NavLink>
