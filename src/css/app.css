@@ -211,7 +211,7 @@ h1 {
 .icons {
   position: absolute;
   top: 0px;
-  right: 0;
+  left: 0px;
   /* width: 60px; position: absolute; top: 0; right: 0; */
   display: flex;
   flex-direction: column;
@@ -230,6 +230,10 @@ h1 {
 
 .titleContainer {
   margin-top: -50px;
+}
+
+.womanSvg {
+  transform: translateX(200px);
 }
 /*==================    CONTACT   ==================*/
 .contact {
@@ -317,6 +321,7 @@ button[type="submit"] {
   justify-content: center;
   padding: 1em;
   background-color: rgba(76, 112, 49, 1);
+  border-top: 1px solid white;
 
   /* justify-content: space-evenly;
   align-items: center;
@@ -439,3 +444,9 @@ button:hover {
   background-color: var(--green);
   border-color: var(--green);
 }
+
+.heroContainer {
+  width: 345px;
+  overflow: hidden;
+  align-self: flex-end;
+  }
