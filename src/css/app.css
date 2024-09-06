@@ -323,6 +323,7 @@ button:hover {
   margin: 1em;
   height: 600px;
   position: relative;
+  border-bottom: 3px dashed var(--white);
 }
 
 .card .imageContainer,
