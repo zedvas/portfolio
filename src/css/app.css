@@ -47,6 +47,7 @@ body {
   color: var(--white);
   width: 100vw;
   overflow-x: hidden;
+  margin-bottom: 5em;
 }
 
 .appContainer {
@@ -96,6 +97,7 @@ a {
 a:hover {
   font-family: var(--solid-font);
   font-weight: 700;
+  color: var(--accent)
 }
 
 .home {
@@ -290,10 +292,13 @@ button[type="submit"] {
   letter-spacing: 3px;
   font-weight: 100;
   background-color: var(--accent);
-  border: 10px solid var(--accent);
   transition: all 0.5s ease;
   color: #ffffff;
   padding: 0.7em 1em;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 /*==================    PROJECTS   ==================*/
@@ -435,7 +440,6 @@ button[type="submit"] {
   align-items: center;
   margin: 0.2em;
   background-color: var(--accent);
-  border: 3px solid var(--accent);
   transition: all 0.5s ease;
   color: var(--white);
   font-size: 1rem;
@@ -456,7 +460,6 @@ button[type="submit"] {
 }
 button:hover {
   background-color: var(--green);
-  border-color: var(--green);
 }
 
 .heroContainer {
