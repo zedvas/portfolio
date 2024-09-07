@@ -64,12 +64,12 @@ export const Projects = () => {
         demoLink=""
       />
       <Card
+      portfolio={true}
         imageSrc={"/assets/portfolio.png"}
         title={"Personal portfolio"}
         description={"Built with Vite and React. Utilises Joi for validation of contact form and EmailJS"}
         tools={["React", "React Router", "React Modal", "Joi", "EmailJS"]}
-        githubLink=""
-        githubLinkBackend=""
+        githubLink="https://github.com/zedvas/portfolio"
         demoLink=""
       />
     </div>

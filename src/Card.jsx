@@ -7,6 +7,7 @@ export const Card = ({
   githubLink,
   githubLinkBackend,
   demoLink,
+  portfolio,
 }) => {
   return (
     <div className={fullStack ? "card fullstack" : "card"}>
@@ -45,11 +46,12 @@ export const Card = ({
             </a>
           </button>
         )}
-        <button>
+        {!portfolio && <button>
           <a href={demoLink} target="_blank">
             Live demo
           </a>
-        </button>
+        </button>}
+        
       </div>
     </div>
   );
