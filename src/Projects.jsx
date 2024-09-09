@@ -27,7 +27,7 @@ export const Projects = () => {
         demoLink="https://holidough.uk/"
       />
       <Card
-        imageSrc={"/assets/rentAPet.png"}
+        imageSrc={"/assets/rentAPet2.png"}
         title={"Rent-A-Pet"}
         description={
           "A mock e-commerce platform in React, featuring sorting and filtering capabilities using JavaScript array methods and dynamic calculations using data held in state"
@@ -37,7 +37,7 @@ export const Projects = () => {
         demoLink="https://rent-a-pet.netlify.app/"
       />
       <Card
-        imageSrc={"/assets/simpsons.png"}
+        imageSrc={"/assets/simpsons2.png"}
         title={"Simpsons Quotes"}
         description={
           "A React application that fetches and displays quotes from The Simpsons API, enabling users to search, like, and delete quotes while utilizing React Hooks"
