@@ -40,7 +40,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 62.5%;
   font-weight: 300;
   background-color: var(--yellow);
@@ -196,7 +196,7 @@ h1 {
 .about {
   max-width: 600px;
   font-size: 1rem;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
   line-height: 1em;
   color: white;
 }
@@ -204,13 +204,17 @@ h1 {
 .about span {
   color: var(--green);
   font-family: var(--solid-font);
-  margin-top: -90px;
-}
+position: relative;top: 2px;
+margin-right: 3px;}
 
 .about p a {
   font-family: inherit;
   font-weight: 500;
   text-decoration: underline;
+  color:inherit
+}
+.about p a:hover {
+  color: var(--accent)
 }
 
 /*==================    ICONS   ==================*/
