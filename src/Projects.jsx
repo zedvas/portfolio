@@ -82,7 +82,7 @@ export const Projects = () => {
         githubLink="https://github.com/zedvas/julyliebe2"
         demoLink="https://julyliebe.netlify.app/"
       />
-      <Card
+      {/* <Card
         imageSrc={"/assets/hackathon.png"}
         title={"Honey, I remembered!"}
         description={
@@ -92,7 +92,7 @@ export const Projects = () => {
         githubLink=""
         githubLinkBackend=""
         demoLink=""
-      />
+      /> */}
       <Card
         portfolio={true}
         imageSrc={"/assets/portfolio.png"}
