@@ -12,7 +12,6 @@ export const Illustration = () => {
       <g id="Master/Scenes/Road Trip">
         <g
           id="Master/Character/Standing"
-          transform="matrix(-1 0 1 162 47) scale(1 1)"
         >
           <g id="Master/Character/Standing">
             <g
