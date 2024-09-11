@@ -4,7 +4,7 @@ export const Title = () => {
       <h1>
         <span>zahra</span> <span>vasanji</span>
       </h1>
-      <p>software engineer</p>
+      <p>software developer</p>
     </div>
   );
 };

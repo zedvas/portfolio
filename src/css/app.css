@@ -32,6 +32,10 @@
   font-family: "Cocogoose-Pro-Regular";
   src: url("/assets/cocogoose-pro.regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Caroni-Regular";
+  src: url("/assets/Caroni-Regular.otf") format("opentype");
+}
 
 * {
   margin: 0;
@@ -165,7 +169,7 @@ h1 {
 .projects h1::after,
 .contact h1 span:nth-child(2)::after {
   position: absolute;
-  right: 6px;
+  right: 4px;
   bottom: 0;
   letter-spacing: 0px;
   font-weight: 100;
@@ -184,13 +188,12 @@ h1 {
 }
 
 .titleContainer p {
-  font-size: 1.3rem;
-  font-weight: 600;
-  letter-spacing: -0.1em;
+  font-family: "Caroni-Regular", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
   color: var(--accent);
   margin-right: 0em;
   margin-top: -1.3em;
-  text-transform: uppercase;
 }
 
 .about {
