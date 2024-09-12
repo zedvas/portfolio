@@ -211,6 +211,7 @@ position: relative;top: 2px;
 margin-right: 3px;}
 
 .about p a {
+  font-size: 1rem;
   font-family: inherit;
   font-weight: 500;
   text-decoration: underline;
@@ -358,7 +359,6 @@ button:hover {
 
 .buttonContainer {
   flex-direction: row;
-  max-width: 280px;
   align-self: flex-end;
 }
 
@@ -366,6 +366,10 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.buttonContainer a {
+  font-size: 0.7rem;;
 }
 
 .infoContainer {
@@ -442,7 +446,6 @@ button:hover {
   border-radius: 20px;
   text-align: center;
   /* min-width: 90px; */
-  height: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -30,12 +30,12 @@ export const Card = ({
           <>
             <button>
               <a href={githubLink} target="_blank">
-                Front end
+                Github - Front end
               </a>
             </button>
             <button>
               <a href={githubLinkBackend} target="_blank">
-                Back end
+                Github - Back end
               </a>
             </button>
           </>

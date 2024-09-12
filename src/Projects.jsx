@@ -93,7 +93,7 @@ export const Projects = () => {
         githubLinkBackend=""
         demoLink=""
       /> */}
-      <Card
+      {/* <Card
         portfolio={true}
         imageSrc={"/assets/portfolio.png"}
         title={"Personal portfolio"}
@@ -103,7 +103,7 @@ export const Projects = () => {
         tools={["React", "React Router", "React Modal", "Joi", "EmailJS"]}
         githubLink="https://github.com/zedvas/portfolio"
         demoLink=""
-      />
+      /> */}
     </div>
   );
 };
