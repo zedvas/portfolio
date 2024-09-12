@@ -10,7 +10,7 @@ export const Home = () => {
       <Hero/>
       <Title />
       <About />
-      <Projects/>
+      <Projects />
     </div>
   );
 };

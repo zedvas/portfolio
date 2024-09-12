@@ -2,7 +2,7 @@ import { Card } from "./Card";
 
 export const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h1>projects</h1>
       <Card
         fullStack={true}

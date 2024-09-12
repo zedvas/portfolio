@@ -10,7 +10,9 @@
   --hollow-font: "Cocogoose-Pro-Block-Border";
   --inline-font: "Cocogoose-Pro-Inline";
 }
-
+html {
+  overflow-x: hidden;
+}
 /* @font-face {
   font-family: "Blackout-Midnight";
   src: url("/assets/Blackout-Midnight.ttf") format("truetype");
@@ -60,7 +62,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2em;
 }
 
 .disableScroll {
@@ -101,7 +102,7 @@ a {
 a:hover {
   font-family: var(--solid-font);
   font-weight: 700;
-  color: var(--accent)
+  color: var(--accent);
 }
 
 .home {
@@ -120,14 +121,17 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 375px;
+  width: 370px;
   align-self: flex-end;
+  position: relative;
+  right: 30px
+  ;
 }
 
 h1 {
   font-family: var(--solid-font), sans-serif;
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 80px;
   display: flex;
   /* flex-direction: column; */
@@ -143,14 +147,14 @@ h1 {
   color: var(--green);
 }
 
-.projects h1, .contact h1 {
+.projects h1 {
+  font-size: 3rem;
+  color: var(--yellow);
+  position: relative;
+}
+.contact h1 {
   font-size: 5rem;
   flex-direction: column;
-}
-
-.projects h1 {
-  color: var(--green);
-  position: relative;
 }
 
 .projects h1::after {
@@ -197,28 +201,32 @@ h1 {
 }
 
 .about {
+  width: 100%;
   max-width: 600px;
   font-size: 1rem;
   /* letter-spacing: 0.5px; */
   line-height: 1em;
   color: white;
+  padding: 0 2em 0 1em;
 }
 
 .about span {
   color: var(--green);
   font-family: var(--solid-font);
-position: relative;top: 2px;
-margin-right: 3px;}
+  position: relative;
+  top: 2px;
+  margin-right: 3px;
+}
 
 .about p a {
   font-size: 1rem;
   font-family: inherit;
   font-weight: 500;
   text-decoration: underline;
-  color:inherit
+  color: inherit;
 }
 .about p a:hover {
-  color: var(--accent)
+  color: var(--accent);
 }
 
 /*==================    ICONS   ==================*/
@@ -253,7 +261,7 @@ margin-right: 3px;}
 
 .titleContainer {
   margin-top: -50px;
-  margin-left: -50px;
+  margin-left: 10px;
 }
 
 /* .womanSvg {
@@ -313,82 +321,43 @@ button:hover {
 /*==================    PROJECTS   ==================*/
 .projects {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.card .imageContainer {
-  width: 50%;
-  height: 100%;
+  flex-wrap: nowrap;
 }
 
 .card {
-  padding: 2em;
-  color: white;
-  width: 100%;
+  /* height: 500px; */
+  width: 80%;
+  border-bottom: 5px dashed var(--white);
+  margin: 1em 0;
+  color: var(--white);
   display: flex;
   flex-direction: column;
-  margin: 1em;
-  height: 600px;
-  position: relative;
-  border-bottom: 3px dashed var(--white);
-}
-
-.card .imageContainer,
-.infoContainer {
-  width: 100%;
-}
-
-.infoContainer,
-.buttonContainer,
-.techContainer {
-  display: flex;
-}
-
-.infoContainer {
-  justify-content: center;
-  padding: 1em;
-  background-color: rgba(76, 112, 49, 1);
-  border-top: 1px solid white;
-
-  /* justify-content: space-evenly;
   align-items: center;
-  flex-direction: row; */
-}
-
-.buttonContainer {
-  flex-direction: row;
-  align-self: flex-end;
-}
-
-.buttonContainer div {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-bottom: 2em;
 }
 
-.buttonContainer a {
-  font-size: 0.7rem;;
+.card img {
+  width: 100%;
 }
 
-.infoContainer {
-  flex-direction: column;
-}
-
-.infoContainer p {
-  font-size: 1rem;
-}
-
-.techContainer {
-  flex-wrap: wrap;
-  max-width: 400px;
-  align-self: flex-end;
+.card .buttonContainer {
+  display: flex;
   justify-content: flex-end;
 }
 
+.card .techContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.5em;
+  max-width: 90%;
+}
+
 .techContainer span {
-  margin-left: 0.6em;
+  margin-right: 0.6em;
   margin-bottom: 0.4em;
   background-color: var(--white);
   color: var(--green);
@@ -398,63 +367,26 @@ button:hover {
   font-weight: 700;
 }
 
-.imageContainer {
-  max-width: 600px;
-  /* border: 1px solid white; */
-  overflow: hidden;
-}
-
-.imageContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.card .textContainer {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0) 50%,
-    var(--green) 80%,
-    var(--green) 100%
-  );
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 1em;
-  font-size: 0.9rem;
-}
-.imageContainer {
-  position: relative;
-}
 .card h2 {
   font-family: var(--solid-font), sans-serif;
   font-size: 2rem;
   line-height: 33px;
   color: var(--white);
 }
-
 .card button {
   border: none;
-  padding: 0.8em;
-  border-radius: 20px;
+  padding: 0.4em 0.6em;
+  border-radius: 10px;
   text-align: center;
   /* min-width: 90px; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0.2em;
   background-color: var(--accent);
   transition: all 0.5s ease;
   color: var(--white);
-  font-size: 1rem;
   position: relative;
 }
 
@@ -462,8 +394,29 @@ button:hover {
   color: var(--white);
 }
 
-.card button span {
-  display: block;
+.card .textContainer {
+  background-color: #4c7031;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  padding: 1em 0.5em;
+}
+
+.card > a {
+  margin-bottom: -10px;
+}
+
+.textContainer p {
+  font-size: 1rem;
+  margin: 1em 0;
+}
+
+.buttonContainer {
+  align-items: flex-end;
+}
+
+.buttonContainer a {
   font-size: 0.8rem;
 }
 
@@ -481,12 +434,18 @@ button:hover {
   align-items: center;
   margin-bottom: 1.5em;
   position: relative;
+  right: 25px;
   /* overflow: hidden;
   align-self: flex-end; */
-  }
+}
 
-  .icons {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
+.icons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.projects {
+  margin-top: 7em;
+  background-color: #4c7031;
+}
