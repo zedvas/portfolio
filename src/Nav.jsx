@@ -10,10 +10,10 @@ export const Nav = () => {
         <NavLink to="/">
           <li>home</li>
         </NavLink>
-        <NavLink to="/projects">
+        <a href="#projects">
           <li>projects</li>
-        </NavLink>
-        <NavLink to="/assets/ZahraVasanji.pdf" download target="_blank">
+        </a>
+        <NavLink to="/resume">
           <li>resume</li>
         </NavLink>
         <NavLink to="/contact">

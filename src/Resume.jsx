@@ -1,47 +1,236 @@
+import { Document } from "react-pdf";
 import { NavLink } from "react-router-dom";
 
 export const Resume = () => {
   return (
-    <div className="resume">
-        <div className="resumeLink">
-      <h2><NavLink to="/ZahraVasanji.pdf" download target="_blank">
-        Click here</NavLink> to download a copy of my resume
-      </h2></div>
-      <div className="resumeIcons">
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original-wordmark.svg" /><figcaption>ES Lint</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" /><figcaption>GitHub</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" /><figcaption>Express</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" /><figcaption>Vite JS</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg" /><figcaption>Material UI</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" /><figcaption>Node JS</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" /><figcaption>HTML5</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg" /><figcaption>MySQL</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" /><figcaption>Git</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" /><figcaption>React</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" /><figcaption>CSS3</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" /><figcaption>SASS</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" /><figcaption>Bootstrap</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /><figcaption>JavaScript</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" /><figcaption>MongoDB</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain-wordmark.svg" /><figcaption>GraphQL</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" /><figcaption>VSCode</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" /><figcaption>Bash</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg" /><figcaption>NPM</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original-wordmark.svg" /><figcaption>Three JS</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original-wordmark.svg" /><figcaption>Socket io</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original-wordmark.svg" /><figcaption>Cypress io</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" /><figcaption>TypeScript</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neo4j/neo4j-original-wordmark.svg" /><figcaption>Neo4j</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg" /><figcaption>Firebase</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" /><figcaption>NextJS</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" /><figcaption>Docker</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original-wordmark.svg" /><figcaption>Kubernetes</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg" /><figcaption>OAuth</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original-wordmark.svg" /><figcaption>Netlify</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg" /><figcaption>ViTest</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/d3js/d3js-original.svg" /><figcaption>D3</figcaption></figure>
-        <figure><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" /><figcaption>AWS</figcaption></figure>
+    <>
+      <div className="resume">
+        <button>
+          <a href="/assets/ZahraVasanji.pdf" target="_blank" download>
+            Download a PDF copy
+          </a>
+        </button>
+        <section>
+          <h2>Software Engineering Skills</h2>
+          <ul>
+            <li>
+              <strong>JavaScript:</strong> ES6+, AJAX & API’s - REST and
+              GraphQL, Animation (Greensock), Graphing (d3.js) & Realtime
+              (websockets and Socket.IO), OAuth, Next.JS
+            </li>
+            <li>
+              <strong>React:</strong> Hooks, Context, Material UI, Redux, Redux
+              Toolkit
+            </li>
+            <li>
+              <strong>Testing:</strong> TypeScript, Cypress, Vitest, Vite
+            </li>
+            <li>
+              <strong>Node.js:</strong> Vanilla & Express
+            </li>
+            <li>
+              <strong>Databases:</strong> SQL (MySQL), NoSQL (MongoDB with
+              Mongoose.js, Redis, Firebase, GraphCMS/Hygraph)
+            </li>
+            <li>
+              <strong>DevOps:</strong> Docker & Kubernetes, Vercel (CI/CD),
+              Serverless (Netlify), cPanel, Apache, XAMPP
+            </li>
+            <li>
+              <strong>CSS 3:</strong> Responsive design, Flexbox & CSS Grid,
+              SASS, CSS frameworks, and Tailwind
+            </li>
+            <li>
+              <strong>HTML5:</strong> Semantically correct for accessibility and
+              SEO
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Key Projects</h2>
+
+          <div>
+            <h3>HoliDough</h3>
+            <p>
+              <a
+                href="https://holidough.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live demo
+              </a>{" "}
+              |
+              <a
+                href="https://github.com/zedvas/travel-tally"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Frontend GitHub
+              </a>{" "}
+              |
+              <a
+                href="https://github.com/zedvas/travel-tally-back-end"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Backend GitHub
+              </a>
+            </p>
+            <p>
+              <strong>Tech Used:</strong> React, Material UI, Node.js,
+              Express.js, Axios, MySQL, Joi, SASS, Redux, React Router, React
+              Cropper, React Toastify, React Webcam, Local Storage, GSAP, Framer
+              Motion, Chart.js, Day.js
+            </p>
+            <p>
+              <strong>What it Does:</strong> HoliDough is a holiday budgeting
+              application that allows users to manage, track, and predict
+              expenses, with visual budget tracking via Chart.js for clear and
+              intuitive data presentation.
+            </p>
+            <p>
+              <strong>What It Demonstrates:</strong> Architected a reusable form
+              component. Integrated Redux with Redux Persist for state
+              synchronization. Enhanced UI with custom animations, SASS, and
+              Material UI. Utilized APIs for financial data. Implemented AGILE
+              principles, with MoSCoW prioritization. Secured authentication
+              with sha256 and request validation using Joi. Prevented SQL
+              injection via prepared statements.
+            </p>
+          </div>
+
+          <div>
+            <h3>Rent-A-Pet</h3>
+            <p>
+              <a
+                href="https://rent-a-pet.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live demo
+              </a>{" "}
+              |
+              <a
+                href="https://github.com/zedvas/shopping-cart"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </p>
+            <p>
+              <strong>Tech Used:</strong> JavaScript, React, Material UI
+            </p>
+            <p>
+              <strong>What It Demonstrates:</strong> A mock e-commerce platform
+              built in React using array methods for sorting and filtering
+              results. Automated cart calculations and introduced dynamic class
+              assignment for UX enhancements. Implemented a ‘like’ feature with
+              visual indicators.
+            </p>
+          </div>
+
+          <div>
+            <h3>Portfolio Site</h3>
+            <p>
+              <a
+                href="https://zahravasanji.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live demo
+              </a>{" "}
+              |
+              <a
+                href="https://github.com/zedvas/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </p>
+            <p>
+              <strong>Tech Used:</strong> React, React Router, Joi, React Modal,
+              EmailJS, Vite, Material UI
+            </p>
+            <p>
+              <strong>What It Demonstrates:</strong> Integrated EmailJS to send
+              emails from the client-side. Used React Modal for dynamic popups.
+              Built a fully responsive site with optimized navigation and
+              performance using Vite and React Router.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <strong>The Jump Digital School</strong> (Sep 2023 - Dec 2023){" "}
+              <br />A 12-week full-time programme of Full-Stack Software
+              Engineering Training. Developed and deployed full-stack websites
+              and web applications to a professional standard. Delivered
+              individual and team projects, including participation in a
+              hackathon.
+            </li>
+            <li>
+              <strong>Middlesex University, London</strong> <br />
+              BA (Hons), Accounting and Finance, 2:1
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Professional Experience</h2>
+          <div>
+            <h3>Senior Stock Controller, PRADA GROUP, London</h3>
+            <p>
+              <em>Jul 2021 - May 2024</em>
+            </p>
+            <ul>
+              <li>
+                Conducted regular audits for over 12,000 units, analyzing
+                inventory and stock loss data to improve loss prevention and
+                operational efficiency.
+              </li>
+              <li>
+                Responsible for logistics of transferring, tracking, and
+                securing high-value assets.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Stock Controller, CELINE, London</h3>
+            <p>
+              <em>Nov 2017 – Jun 2020</em>
+            </p>
+          </div>
+
+          <div>
+            <h3>Stock Manager, REISS, London</h3>
+            <p>
+              <em>Jan 2016 – Oct 2017</em>
+            </p>
+          </div>
+
+          <div>
+            <h3>Sales Assistant, REISS, London</h3>
+            <p>
+              <em>Jan 2015 – Dec 2015</em>
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Additional Information</h2>
+          <ul>
+            <li>Right to work in the UK</li>
+            <li>Immediately available for interviews</li>
+          </ul>
+        </section>
       </div>
-    </div>
+    </>
   );
 };

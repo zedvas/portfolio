@@ -7,9 +7,11 @@ import { Projects } from "./Projects";
 export const Home = () => {
   return (
     <div className="home">
-      <Hero/>
-      <Title />
-      <About />
+      <div className="landing">
+        <Hero />
+        <Title />
+        <About />
+      </div>
       <Projects />
     </div>
   );

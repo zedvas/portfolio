@@ -6,6 +6,7 @@ import { Nav } from "./Nav";
 import "./css/app.css";
 import { Modal } from "./Modal";
 import { useState } from "react";
+import { Resume } from "./Resume";
 
 function App() {
   const [reactModalIsOpen, setReactModalIsOpen] = useState(false);
@@ -35,6 +36,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact openReactModal={openReactModal} changeModalMessage={changeModalMessage}/>} />
+        <Route path="/resume" element={<Resume />} />
+
       </Routes>
     </div>
   );
