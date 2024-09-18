@@ -59,16 +59,14 @@ export const Resume = () => {
                   rel="noopener noreferrer"
                 >
                   Live demo
-                </a>{" "}
-                |
+                </a>
                 <a
                   href="https://github.com/zedvas/travel-tally"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Frontend GitHub
-                </a>{" "}
-                |
+                </a>
                 <a
                   href="https://github.com/zedvas/travel-tally-back-end"
                   target="_blank"
@@ -109,8 +107,7 @@ export const Resume = () => {
                   rel="noopener noreferrer"
                 >
                   Live demo
-                </a>{" "}
-                |
+                </a>
                 <a
                   href="https://github.com/zedvas/shopping-cart"
                   target="_blank"
@@ -140,8 +137,7 @@ export const Resume = () => {
                   rel="noopener noreferrer"
                 >
                   Live demo
-                </a>{" "}
-                |
+                </a>
                 <a
                   href="https://github.com/zedvas/portfolio"
                   target="_blank"
