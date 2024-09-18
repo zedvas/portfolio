@@ -127,7 +127,8 @@ a:hover {
   right: 30px;
 }
 
-h1 {
+h1,
+.resume h2 {
   font-family: var(--solid-font), sans-serif;
   font-weight: 100;
   font-size: 2.8rem;
@@ -140,7 +141,9 @@ h1 {
   letter-spacing: 0px;
   position: relative;
 }
-
+.resume h2 {
+  line-height: 40px
+}
 .titleContainer h1 span:nth-child(2),
 .contact h1 span:nth-child(2) {
   color: var(--green);
@@ -154,6 +157,10 @@ h1 {
 .contact h1 {
   font-size: 5rem;
   flex-direction: column;
+}
+.resume h2 {
+  font-size: 1.9rem;
+  justify-content: center;
 }
 
 .projects h1::after {
@@ -170,7 +177,12 @@ h1 {
 
 .titleContainer h1 span:nth-child(2)::after,
 .projects h1::after,
-.contact h1 span:nth-child(2)::after {
+.contact h1 span:nth-child(2)::after,
+.resume .keyProjects::after,
+.resume .softwareEngineeringSkills::after,
+.resume .additionalInformation::after,
+.resume .education::after,
+.resume .professionalExperience::after {
   position: absolute;
   right: 4px;
   bottom: 0;
@@ -179,6 +191,7 @@ h1 {
   font-family: var(--hollow-font), sans-serif;
   color: var(--white);
 }
+
 .titleContainer h1 span:nth-child(2)::after {
   letter-spacing: 0px;
 }
@@ -459,7 +472,7 @@ button:hover {
 /*==================    PROJECTS   ==================*/
 
 .resume {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #000;
   max-width: 500px;
@@ -467,6 +480,7 @@ button:hover {
   flex-direction: column;
   background-color: var(--green);
   padding: 2em;
+  margin-top: 2em;
 }
 
 .resume a {
@@ -474,17 +488,17 @@ button:hover {
   font-size: unset;
   color: unset;
   color: var(--accent);
-  font-weight: 900; padding: 0 1em;
-  border-right: 1px solid var(--green)
+  font-weight: 900;
+  padding: 0 0.7em;
+  border-right: 1px solid var(--green);
 }
 .resume a:nth-child(1) {
   padding-left: 0;
 }
 
-.resume a:nth-last-child(1)  {
+.resume a:nth-last-child(1) {
   border-right: none;
 }
-
 
 .resume h2 {
   text-align: center;
@@ -495,7 +509,10 @@ button:hover {
 }
 
 .resume h3 {
-font-size: 1.3rem;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+
 }
 
 .resume section {
@@ -508,8 +525,6 @@ font-size: 1.3rem;
   border-bottom: none;
 }
 
-
-
 .resume button {
   border: none;
   padding: 0.4em 0.6em;
@@ -519,18 +534,20 @@ font-size: 1.3rem;
   background-color: var(--accent);
   transition: all 0.5s ease;
   color: var(--white);
-align-self: flex-end;
+  align-self: flex-end;
 }
-.resume p, .resume li {
-  margin-bottom: 1em
+.resume p {
+  margin-bottom: 1em;
 }
 
 .resume div {
-  margin-bottom:2em;
+  margin-bottom: 2em;
 }
 
-.resume p:nth-last-child(1), .resume li:nth-last-child(1), .resume div:nth-last-of-type(1) {
-margin-bottom: 0;
+.resume p:nth-last-child(1),
+.resume li:nth-last-child(1),
+.resume div:nth-last-of-type(1) {
+  margin-bottom: 0;
 }
 .resume .sectionMain {
   background-color: var(--yellow);
@@ -541,6 +558,42 @@ margin-bottom: 0;
   color: var(--unset);
 }
 .resume li {
-  list-style:circle
+  list-style: circle;
 }
 
+.resume .softwareEngineeringSkills::after {
+  content: "software engineering skills";
+}
+.resume .keyProjects::after {
+  content: "key projects";
+}
+.resume .education::after {
+  content: "education";
+}
+.resume .professionalExperience::after {
+  content: "professional experience";
+}
+.resume .additionalInformation::after {
+  content: "additional information";
+}
+
+.resume .keyProjects,
+.resume .softwareEngineeringSkills,
+.resume .additionalInformation,
+.resume .education,
+.resume .professionalExperience {
+  position: relative;
+}
+
+.resume .keyProjects::after,
+.resume .softwareEngineeringSkills::after,
+.resume .additionalInformation::after,
+.resume .education::after,
+.resume .professionalExperience::after {
+  right: unset;
+  margin-left: -4px;
+}
+
+.resume .softwareEngineeringSkills ~ ul li {
+  margin-bottom: 0.5em;
+}

@@ -11,7 +11,9 @@ export const Resume = () => {
           </a>
         </button>
         <section>
-          <h2>software engineering skills</h2>
+          <h2 className="softwareEngineeringSkills">
+            software engineering skills
+          </h2>
           <ul className="sectionMain">
             <li>
               <strong>JavaScript:</strong> ES6+, AJAX & API’s - REST and
@@ -48,7 +50,7 @@ export const Resume = () => {
         </section>
 
         <section>
-          <h2>key projects</h2>
+          <h2 className="keyProjects">key projects</h2>
           <div className="sectionMain">
             <div>
               <h3>HoliDough</h3>
@@ -76,25 +78,27 @@ export const Resume = () => {
                 </a>
               </p>
               <p>
-                <strong>Tech Used:</strong> React, Material UI, Node.js,
-                Express.js, Axios, MySQL, Joi, SASS, Redux, React Router, React
-                Cropper, React Toastify, React Webcam, Local Storage, GSAP,
-                Framer Motion, Chart.js, Day.js
+                <strong>Tech Used:</strong>
+                <br /> React, Material UI, Node.js, Express.js, Axios, MySQL,
+                Joi, SASS, Redux, React Router, React Cropper, React Toastify,
+                React Webcam, Local Storage, GSAP, Framer Motion, Chart.js,
+                Day.js
               </p>
               <p>
-                <strong>What it Does:</strong> HoliDough is a holiday budgeting
-                application that allows users to manage, track, and predict
-                expenses, with visual budget tracking via Chart.js for clear and
-                intuitive data presentation.
+                <strong>What it Does:</strong>
+                <br /> HoliDough is a holiday budgeting application that allows
+                users to manage, track, and predict expenses, with visual budget
+                tracking via Chart.js for clear and intuitive data presentation.
               </p>
               <p>
-                <strong>What It Demonstrates:</strong> Architected a reusable
-                form component. Integrated Redux with Redux Persist for state
-                synchronization. Enhanced UI with custom animations, SASS, and
-                Material UI. Utilized APIs for financial data. Implemented AGILE
-                principles, with MoSCoW prioritization. Secured authentication
-                with sha256 and request validation using Joi. Prevented SQL
-                injection via prepared statements.
+                <strong>What It Demonstrates:</strong>
+                <br /> Architected a reusable form component. Integrated Redux
+                with Redux Persist for state synchronization. Enhanced UI with
+                custom animations, SASS, and Material UI. Utilized APIs for
+                financial data. Implemented AGILE principles, with MoSCoW
+                prioritization. Secured authentication with sha256 and request
+                validation using Joi. Prevented SQL injection via prepared
+                statements.
               </p>
             </div>
 
@@ -117,14 +121,16 @@ export const Resume = () => {
                 </a>
               </p>
               <p>
-                <strong>Tech Used:</strong> JavaScript, React, Material UI
+                <strong>Tech Used:</strong>
+                <br /> JavaScript, React, Material UI
               </p>
               <p>
-                <strong>What It Demonstrates:</strong> A mock e-commerce
-                platform built in React using array methods for sorting and
-                filtering results. Automated cart calculations and introduced
-                dynamic class assignment for UX enhancements. Implemented a
-                ‘like’ feature with visual indicators.
+                <strong>What It Demonstrates:</strong>
+                <br /> A mock e-commerce platform built in React using array
+                methods for sorting and filtering results. Automated cart
+                calculations and introduced dynamic class assignment for UX
+                enhancements. Implemented a ‘like’ feature with visual
+                indicators.
               </p>
             </div>
 
@@ -147,82 +153,86 @@ export const Resume = () => {
                 </a>
               </p>
               <p>
-                <strong>Tech Used:</strong> React, React Router, Joi, React
-                Modal, EmailJS, Vite, Material UI
+                <strong>Tech Used:</strong>
+                <br /> React, React Router, Joi, React Modal, EmailJS, Vite,
+                Material UI
               </p>
               <p>
-                <strong>What It Demonstrates:</strong> Integrated EmailJS to
-                send emails from the client-side. Used React Modal for dynamic
-                popups. Built a fully responsive site with optimized navigation
-                and performance using Vite and React Router.
+                <strong>What It Demonstrates:</strong>
+                <br /> Integrated EmailJS to send emails from the client-side.
+                Used React Modal for dynamic popups. Built a fully responsive
+                site with optimized navigation and performance using Vite and
+                React Router.
               </p>
             </div>
           </div>
         </section>
 
         <section>
-          <h2>education</h2>
-          <ul className="sectionMain">
-            <li>
-              <strong>The Jump Digital School</strong> (Sep 2023 - Dec 2023){" "}
-              <br />A 12-week full-time programme of Full-Stack Software
-              Engineering Training. Developed and deployed full-stack websites
-              and web applications to a professional standard. Delivered
-              individual and team projects, including participation in a
-              hackathon.
-            </li>
-            <li>
+          <h2 className="education">education</h2>
+          <div className="sectionMain">
+            
+              <strong>The Jump Digital School</strong> <br />
+              <em>Sep 2023 - Dec 2023</em> <br />A 12-week full-time programme
+              of Full-Stack Software Engineering Training. Developed and
+              deployed full-stack websites and web applications to a
+              professional standard. Delivered individual and team projects,
+              including participation in a hackathon.
+              <br/><br/>
               <strong>Middlesex University, London</strong> <br />
+              <em>2016</em>
+              <br />
               BA (Hons), Accounting and Finance, 2:1
-            </li>
-          </ul>
+            
+          </div>
         </section>
 
         <section>
-          <h2>professional experience</h2>
+          <h2 className="professionalExperience">professional experience</h2>
           <div className="sectionMain">
             <div>
-            <h3>Senior Stock Controller, PRADA GROUP, London</h3>
-            <p>
-              <em>Jul 2021 - May 2024</em>
-            </p>
-            <ul>
-              <li>
-                Conducted regular audits for over 12,000 units, analyzing
-                inventory and stock loss data to improve loss prevention and
-                operational efficiency.
-              </li>
-              <li>
-                Responsible for logistics of transferring, tracking, and
-                securing high-value assets.
-              </li>
-            </ul>
-          </div>
+              <strong>Senior Stock Controller, PRADA GROUP, London</strong>
+              <p>
+                <em>Jul 2021 - May 2024</em>
+              </p>
+              <ul>
+                <li>
+                  Conducted regular audits for over 12,000 units, analyzing
+                  inventory and stock loss data to improve loss prevention and
+                  operational efficiency.
+                </li>
+                <li>
+                  Responsible for logistics of transferring, tracking, and
+                  securing high-value assets.
+                </li>
+              </ul>
+            </div>
 
-          <div>
-            <h3>Stock Controller, CELINE, London</h3>
-            <p>
-              <em>Nov 2017 – Jun 2020</em>
-            </p>
-          </div>
+            <div>
+              <strong>Stock Controller, CELINE, London</strong>
+              <p>
+                <em>Nov 2017 – Jun 2020</em>
+              </p>
+            </div>
 
-          <div>
-            <h3>Stock Manager, REISS, London</h3>
-            <p>
-              <em>Jan 2016 – Oct 2017</em>
-            </p>
-          </div>
+            <div>
+              <strong>Stock Manager, REISS, London</strong>
+              <p>
+                <em>Jan 2016 – Oct 2017</em>
+              </p>
+            </div>
 
-          <div>
-            <h3>Sales Assistant, REISS, London</h3>
-            <p>
-              <em>Jan 2015 – Dec 2015</em>
-            </p>
-          </div></div>
+            <div>
+              <strong>Sales Assistant, REISS, London</strong>
+              <p>
+                <em>Jan 2015 – Dec 2015</em>
+              </p>
+            </div>
+          </div>
         </section>
 
         <section>
-          <h2>additional information</h2>
+          <h2 className="additionalInformation">additional information</h2>
           <ul className="sectionMain">
             <li>Right to work in the UK</li>
             <li>Immediately available for interviews</li>
