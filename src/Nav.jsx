@@ -10,7 +10,7 @@ export const Nav = () => {
         <NavLink to="/">
           <li>home</li>
         </NavLink>
-        <a href="#projects">
+        <a href="/#projects">
           <li>projects</li>
         </a>
         <NavLink to="/resume">
