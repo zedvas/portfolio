@@ -460,6 +460,7 @@ button:hover {
 
 .resume {
   font-size: 0.8rem;
+  font-weight: 400;
   color: #000;
   max-width: 500px;
   display: flex;
