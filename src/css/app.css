@@ -459,10 +459,8 @@ button:hover {
 /*==================    PROJECTS   ==================*/
 
 .resume {
-  padding: 0 2em;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #fff;
-  background-color: var(--green);
   max-width: 500px;
   display: flex;
   flex-direction: column;
@@ -472,29 +470,32 @@ button:hover {
   font-family: unset;
   font-size: unset;
   color: unset;
-  color: var(--accent);
+  /* color: var(--accent); */
 }
 
 .resume h2 {
   text-align: center;
   margin-bottom: 0.5em;
   text-decoration: underline;
+  font-family: var(--solid-font);
+  color: var(--green);
 }
 
-.resume h2 {
-  font-family: var(--solid-font);
-  color: var(--yellow);
+.resume h3 {
+font-size: 1.3rem;
 }
 
 .resume section {
-  border-bottom: 3px dashed var(--green);
+  /* border-bottom: 3px dashed var(--green); */
   padding: 1em 0;
   /* margin-bottom: 2em; */
 }
 
-.resume div {
-  margin-bottom: 1.5em;
+.resume section:nth-last-child(1) {
+  border-bottom: none;
 }
+
+
 
 .resume button {
   border: none;
@@ -506,9 +507,30 @@ button:hover {
   transition: all 0.5s ease;
   color: var(--white);
 align-self: flex-end;
+}
+.resume p, .resume li {
+  margin-bottom: 1em
+}
 
+.resume div {
+  margin-bottom:2em;
+}
+
+.resume p:nth-last-child(1), .resume li:nth-last-child(1), .resume div:nth-last-of-type(1) {
+margin-bottom: 0;
+}
+.resume .sectionMain {
+  background-color: var(--green);
+  padding: 2em;
 }
 
 .resume button a {
   color: var(--unset);
+}
+.resume li {
+  list-style:circle
+}
+
+.resume h3, strong {
+  color:var(--accent)
 }
