@@ -173,7 +173,7 @@ export const Resume = () => {
           <div className="sectionMain">
             
               <strong>The Jump Digital School</strong> <br />
-              <em>Sep 2023 - Dec 2023</em> <br />A 12-week full-time programme
+              <em>May 2024 - Aug 2024</em> <br />A 12-week full-time programme
               of Full-Stack Software Engineering Training. Developed and
               deployed full-stack websites and web applications to a
               professional standard. Delivered individual and team projects,
